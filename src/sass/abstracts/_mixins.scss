@@ -1,4 +1,4 @@
-@use './colors';
+@use "./colors";
 
 /* Top hero images */
 @mixin hero-image-container-fluid {
@@ -17,22 +17,19 @@
 
 @mixin fluid-title-h1 {
   font-size: calc(26px + (33 - 26) * ((100vw - 320px) / (1400 - 320)));
-  color: $anthracite;
 }
 
 @mixin fluid-title-h2 {
   font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (1400 - 320)));
-  color: $anthracite;
 }
 
 @mixin fluid-title-h4 {
   font-size: calc(21px + (24 - 21) * ((100vw - 320px) / (1400 - 320)));
-  color: $anthracite;
 }
 
 /* Box shadow */
-@mixin gray-blue-shadow {
-  box-shadow: 1px 1px 8px $anthracite-light;
+@mixin anthracite-shadow {
+  box-shadow: 1px 1px 8px #a7b6b9;
 }
 
 /* Form input & texarea */

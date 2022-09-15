@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.homepage {
+  margin-bottom: $end-of-section;
+
+  .welcome {
+    margin-bottom: $end-of-section;
+
+    .welcome__title {
+      @include fluid-title-h1;
+      color: $main;
+    }
+  }
+
+  .donate__title {
+    @include fluid-title-h1;
+    color: $main;
+  }
+
+  .donate {
+    margin-bottom: $end-of-section;
+  }
+}

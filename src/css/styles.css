@@ -1,3 +1,4 @@
+/* Spacing for sections */
 /* Spacing for the top title bars */
 /* Header height */
 /* Top hero images */
@@ -6,9 +7,250 @@
 /* Form input & texarea */
 /* Links */
 /* User dashboard */
-.App {
-  text-align: center;
-  color: #cc1417;
-  font-family: "Rokkitt", serif;
+.custom-button--positive--duck {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 25px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Muli", sans-serif;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  background-color: #255a79;
+  color: white;
+}
+.custom-button--positive--duck:hover {
+  background-color: white;
+  color: #255a79;
+  outline: 1px solid #255a79;
+  outline-offset: -1px;
+}
+
+.cardWp {
+  background-color: #a7b6b9;
+  margin-bottom: 2rem;
+  padding: 0 15px;
+  border: none;
+}
+.cardWp .card-inner {
+  background-color: white;
+  overflow: hidden;
+}
+.cardWp .card-inner .card__image {
+  width: 100%;
+  height: calc(200px + 50 * (100vw - 320px) / 1080);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 8px #a7b6b9;
+  background: linear-gradient(55deg, rgba(144, 215, 235, 0.8) 0%, rgba(161, 218, 227, 0.8) 25%, rgba(179, 222, 216, 0.8) 50%, rgba(190, 213, 193, 0.8) 75%, rgba(185, 201, 174, 0.8) 100%);
+}
+.cardWp .card-inner .card__body {
+  padding: 0 15px;
+}
+.cardWp .card-inner .card__body .body__title {
+  color: #508a87;
+}
+.cardWp .card-inner .card__body .body__read-more {
+  padding-bottom: 1.5rem;
+}
+.cardWp .card-inner .card__body .body__read-more a {
+  text-decoration: none;
+  color: #80c6c2;
+  font-family: "Muli", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.cardWp .card-inner .card__body .body__read-more a:hover {
+  color: #00b8d8;
+}
+.cardWp .card-inner .card__body .read-more {
+  display: none; /* from WP API excerpt */
+}
+.cardWp .card-inner .card__footer {
+  background-color: #508a87;
+  padding: 0 15px;
+}
+.cardWp .card-inner .card__footer .footer__author-date {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.loading-spinner__overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  z-index: 501;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 3px solid #255a79;
+  border-color: #255a79 transparent #255a79 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.homepage {
+  margin-bottom: 2rem;
+}
+.homepage .welcome {
+  margin-bottom: 2rem;
+}
+.homepage .welcome .welcome__title {
+  font-size: calc(26px + 7 * (100vw - 320px) / 1080);
+  color: #255a79;
+}
+.homepage .donate__title {
+  font-size: calc(26px + 7 * (100vw - 320px) / 1080);
+  color: #255a79;
+}
+.homepage .donate {
+  margin-bottom: 2rem;
+}
+
+.home-carousel {
+  margin-bottom: 2rem;
+  width: 100vw;
+  max-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.home-carousel .carousel.slide {
+  left: -7px;
+}
+.home-carousel .slogan-carousel {
+  font-size: calc(20px + 30 * (100vw - 320px) / 1080);
+  font-family: "Fahkwang", sans-serif;
   font-weight: 500;
+  text-shadow: black 3px 3px 8px;
+}
+.home-carousel .slogan-carousel.last-text {
+  line-height: calc(25px + 40 * (100vw - 320px) / 1080);
+  font-size: calc(20px + 18 * (100vw - 320px) / 1080);
+}
+.home-carousel .carousel-indicators {
+  margin-bottom: calc(5px + 21 * (100vw - 320px) / 1080);
+}
+.home-carousel .carousel-caption {
+  right: 5%;
+  left: 5%;
+  bottom: calc(-5px + 175 * (100vw - 320px) / 1080);
+  letter-spacing: 10px;
+  z-index: 1;
+}
+.home-carousel .carousel-control-prev,
+.home-carousel .carousel-control-next {
+  width: calc(35px + 45 * (100vw - 320px) / 1080);
+}
+
+.WpPosts {
+  background-color: #a7b6b9;
+  margin-bottom: 2.5rem;
+}
+.WpPosts .WpPosts__posts {
+  width: 100vw;
+}
+.WpPosts .WpPosts__intro {
+  color: white;
+}
+.WpPosts .WpPosts__intro h1 {
+  font-size: calc(26px + 7 * (100vw - 320px) / 1080);
+  padding-top: 2rem;
+}
+.WpPosts .WpPosts__intro p {
+  margin-bottom: 2rem;
+}
+
+/*-------------------------------------
+Bootstrap
+-------------------------------------*/
+.container-fluid {
+  padding: 0;
+}
+
+/*-------------------------------------
+General
+-------------------------------------*/
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header-sticky {
+  height: 70px;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rokkitt", serif;
+}
+
+p,
+pre,
+span,
+label,
+input {
+  font-family: "Muli", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 70px;
+}
+.App .header-sticky {
+  flex-shrink: 0;
+}
+.App .footer {
+  margin-top: auto;
+}
+.App a {
+  text-decoration: none;
+  color: #008cff;
+}
+.App a:hover {
+  color: #00b8d8;
 }

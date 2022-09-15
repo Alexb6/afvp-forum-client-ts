@@ -1,0 +1,21 @@
+@use "./../abstracts" as *;
+
+.WpPosts {
+  background-color: $anthracite-light;
+  margin-bottom: $between-section;
+
+  .WpPosts__posts {
+    width: 100vw;
+  }
+
+  .WpPosts__intro {
+    color: white;
+    h1 {
+      @include fluid-title-h1;
+      padding-top: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}

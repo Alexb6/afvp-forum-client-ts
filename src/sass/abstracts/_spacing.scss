@@ -4,6 +4,11 @@ $spacer-m: 12px;
 $spacer-l: 20px;
 $spacer-xl: 28px;
 
+/* Spacing for sections */
+$between-section: 2.5rem;
+$end-of-section: 2rem;
+$end-of-section_small: 1.5rem;
+
 /* Spacing for the top title bars */
 $bar-title-padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1400 - 320)));
 $bar-margin: calc(5px + (20 - 5) * ((100vw - 320px) / (1400 - 320)));
