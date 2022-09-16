@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CustomButton from "../../components/buttons/button/CustomButton";
 import HomeCarousel from "./HomeCarousel";
-import HomeWpArticles from "./HomeWpArticles";
+import HomeWpPosts from "./HomeWpPosts";
 
 import "./../../css/styles.css";
 
@@ -32,7 +32,7 @@ const HomePage = () => (
         biennale d’un congrès franco-vietnamien de pneumologie, etc.
       </p>
     </div>
-    <HomeWpArticles />
+    <HomeWpPosts />
     <div className="donate container">
       <h1 className="donate__title">Soutenir les actions de l'association</h1>
       <p className="donate__text mb-4">

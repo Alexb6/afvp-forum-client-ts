@@ -5,7 +5,7 @@ const AFPV = {
   town: "Paris",
   country: "FRANCE",
   phone: "+33 1 01 01 01 01",
-  email: "contact@afvp.net",
+  email: "contact@afvp.xyz",
 };
 
 export default AFPV;

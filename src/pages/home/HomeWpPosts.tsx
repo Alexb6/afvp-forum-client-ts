@@ -20,10 +20,10 @@ type axiosError = {
   };
 };
 
-const HomeWpArticles = () => {
+const HomeWpPosts = () => {
   const [isLoading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
-  const [error, setError] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const getWpPosts = async () => {
     try {
@@ -34,7 +34,7 @@ const HomeWpArticles = () => {
       setPosts(response.data);
       setLoading(false);
     } catch (err) {
-      // setError(err.response.data);
+      // setErrorMessage(err.response.data.message);
       setLoading(false);
     }
   };
@@ -75,4 +75,4 @@ const HomeWpArticles = () => {
   );
 };
 
-export default HomeWpArticles;
+export default HomeWpPosts;

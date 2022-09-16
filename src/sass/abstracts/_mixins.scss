@@ -32,6 +32,10 @@
   box-shadow: 1px 1px 8px #a7b6b9;
 }
 
+@mixin blue-shadow {
+  box-shadow: 1px 1px 8px rgba(#116fa6, 0.3);
+}
+
 /* Form input & texarea */
 @mixin input-general-styles {
   position: relative;

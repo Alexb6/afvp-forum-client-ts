@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import CAROUSEL_ELEMENTS from "../../assetsSrc/data/data-homecarousel";
+import CAROUSEL_ELEMENTS from "../../config/data-homecarousel";
 
 import "./../../css/styles.css";
 
