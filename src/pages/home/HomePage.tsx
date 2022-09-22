@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CustomButton from "../../components/buttons/button/CustomButton";
+import CustomButton from "../../components/buttons/CustomButton";
 import HomeCarousel from "./HomeCarousel";
 import HomeWpPosts from "./HomeWpPosts";
 

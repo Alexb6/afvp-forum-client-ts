@@ -1,0 +1,9 @@
+@use "./../abstracts" as *;
+
+.form-error-message {
+  color: $red;
+  opacity: 0.25;
+  position: relative;
+  top: -15px;
+  max-width: fit-content;
+}

@@ -1,10 +1,7 @@
 import React from "react";
+import { ButtonProps } from "../../types/interfaces";
 
-type Props = {
-  className: string;
-  children: string;
-};
-const CustomButton = ({ children, className, ...otherProps }: Props) => (
+const CustomButton = ({ children, className, ...otherProps }: ButtonProps) => (
   <button className={className} {...otherProps}>
     {children}
   </button>

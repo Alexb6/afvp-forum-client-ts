@@ -1,0 +1,73 @@
+@use "./../abstracts" as *;
+
+.contactpage {
+  margin-top: $bar-margin;
+
+  .contact-titlebar {
+    background-color: $main;
+    @include anthracite-shadow;
+
+    .titlebar-title {
+      color: white;
+      @include fluid-section-title;
+      padding-top: $bar-title-padding;
+      padding-bottom: $bar-title-padding;
+      margin-bottom: $bar-margin;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+
+    .contact-row {
+      width: 100vw;
+    }
+
+    .contact-details {
+      .details-title {
+        @include fluid-title-h2;
+        color: $main;
+      }
+
+      .details-location,
+      .details-telephone,
+      .details-email,
+      .details-blog {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        svg {
+          width: 23px;
+          height: 23px;
+          margin-right: 10px;
+          color: $main;
+
+          &.location-icon {
+            width: 45px;
+            height: 45px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $anthracite-dark;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+
+        .location-address {
+          display: flex;
+          flex-direction: column;
+
+          & .association-title {
+            @include fluid-title-h6;
+            color: $anthracite-dark;
+          }
+        }
+      }
+    }
+  }
+}

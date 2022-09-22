@@ -27,13 +27,21 @@
   font-size: calc(21px + (24 - 21) * ((100vw - 320px) / (1400 - 320)));
 }
 
+@mixin fluid-title-h5 {
+  font-size: calc(18px + (24 - 22) * ((100vw - 320px) / (1400 - 320)));
+}
+
+@mixin fluid-title-h6 {
+  font-size: calc(17px + (24 - 22) * ((100vw - 320px) / (1400 - 320)));
+}
+
 /* Box shadow */
 @mixin anthracite-shadow {
-  box-shadow: 1px 1px 8px #a7b6b9;
+  box-shadow: 1px 1px 8px colors.$anthracite-light;
 }
 
 @mixin blue-shadow {
-  box-shadow: 1px 1px 8px rgba(#116fa6, 0.3);
+  box-shadow: 1px 1px 8px rgba(colors.$main-light, 0.3);
 }
 
 /* Form input & texarea */
@@ -45,14 +53,14 @@
 @mixin input-styles {
   background: none;
   background-color: white;
-  color: $anthracite;
+  color: colors.$anthracite;
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $anthracite-light;
+  border-bottom: 1px solid colors.$anthracite-light;
   margin: 10px 0;
 
   &:focus {
@@ -61,7 +69,7 @@
 }
 
 @mixin input-label {
-  color: $anthracite-light;
+  color: colors.$anthracite-light;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -74,7 +82,7 @@
 @mixin shrink-label {
   top: -7px;
   font-size: 12px;
-  color: $main-light;
+  color: colors.$main-light;
 }
 
 /* Links */
@@ -87,7 +95,7 @@
 @mixin user--name {
   font-size: 1.3rem;
   font-weight: 600;
-  color: $main;
+  color: colors.$main;
 }
 
 @mixin gradient-user-photo {
@@ -102,7 +110,7 @@
 }
 
 @mixin frame-border {
-  border: 1px solid $anthracite-light;
+  border: 1px solid colors.$anthracite-light;
   padding: 1.2rem;
   margin-bottom: 1rem;
 }

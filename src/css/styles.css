@@ -494,6 +494,267 @@
     padding-bottom: 1.5rem;
   }
 }
+.form-input {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form-input .input-input {
+  background: none;
+  background-color: white;
+  color: #798284;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #a7b6b9;
+  margin: 10px 0;
+}
+.form-input .input-input:focus {
+  outline: none;
+}
+.form-input .input-input:focus ~ .input-label {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+.form-input input[type=password] {
+  letter-spacing: 0.3em;
+}
+.form-input .input-label {
+  color: #a7b6b9;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 300ms ease;
+}
+.form-input .input-label.shrink {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+
+.form-select {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form-select .select-input {
+  background: none;
+  background-color: white;
+  color: #798284;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #a7b6b9;
+  margin: 10px 0;
+}
+.form-select .select-input:focus {
+  outline: none;
+}
+.form-select .select-input:focus ~ .input-label {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+.form-select .input-label {
+  color: #a7b6b9;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 300ms ease;
+}
+.form-select .input-label.shrink {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+
+.form-textarea {
+  position: relative;
+  margin-bottom: 25px;
+}
+.form-textarea .textarea-textarea {
+  background: none;
+  background-color: white;
+  color: #798284;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #a7b6b9;
+  margin: 10px 0;
+  white-space: pre-line;
+}
+.form-textarea .textarea-textarea:focus {
+  outline: none;
+}
+.form-textarea .textarea-textarea:focus ~ .textarea-label {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+.form-textarea .textarea-label {
+  color: #a7b6b9;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: all 300ms ease;
+}
+.form-textarea .textarea-label.shrink {
+  top: -7px;
+  font-size: 12px;
+  color: #116fa6;
+}
+
+.form-error-message {
+  color: #cc1417;
+  opacity: 0.25;
+  position: relative;
+  top: -15px;
+  max-width: fit-content;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+}
+
+.modal--container {
+  background-color: #fdfefe;
+  width: calc(100% - 30px);
+  max-width: 500px;
+  border: solid 1px #798284;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+.modal--container .modal--header {
+  background-color: #464b4c;
+  color: white;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  /* Optional header type */
+}
+.modal--container .modal--header p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.modal--container .modal--header span {
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: relative;
+  top: -4px;
+}
+.modal--container .modal--header.error {
+  background-color: #cc1417;
+}
+.modal--container .modal--header.warning {
+  background-color: #ff9808;
+}
+.modal--container .modal--header.valid {
+  background-color: #008cff;
+}
+.modal--container .modal--body {
+  padding: 0 20px;
+  border-bottom: solid 1px #a7b6b9;
+}
+.modal--container .modal--footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: right;
+}
+.modal--container .modal--footer .button--close {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 0.375rem 1.25rem;
+  border: 0;
+  color: white;
+  background-color: #464b4c;
+}
+.modal--container .modal--footer .footer--validate {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal--container .modal--footer .footer--validate .button--validate {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 0.375rem 1.25rem;
+  border: 0;
+  color: white;
+  background-color: #008cff;
+}
+
+.modal-enter {
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.modal-enter-active {
+  top: 15%;
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+.modal-exit {
+  top: 15%;
+  opacity: 1;
+}
+
+.modal-exit-active {
+  top: -15%;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.backdrop-enter {
+  opacity: 0;
+}
+
+.backdrop-enter-active {
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+.backdrop-exit {
+  opacity: 1;
+}
+
+.backdrop-exit-active {
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
 .homepage {
   margin-bottom: 2rem;
 }
@@ -564,6 +825,87 @@
 }
 .WpPosts .WpPosts__intro p {
   margin-bottom: 2rem;
+}
+
+.contact-form .form-title {
+  font-size: calc(24px + 6 * (100vw - 320px) / 1080);
+  color: #255a79;
+}
+
+.contactpage {
+  margin-top: calc(20px + 15 * (100vw - 320px) / 1080);
+}
+.contactpage .contact-titlebar {
+  background-color: #255a79;
+  box-shadow: 1px 1px 8px #a7b6b9;
+}
+.contactpage .contact-titlebar .titlebar-title {
+  color: white;
+  font-size: calc(30px + 10 * (100vw - 320px) / 1080);
+  padding-top: calc(20px + 10 * (100vw - 320px) / 1080);
+  padding-bottom: calc(20px + 10 * (100vw - 320px) / 1080);
+  margin-bottom: calc(20px + 15 * (100vw - 320px) / 1080);
+}
+.contactpage .contact-section {
+  display: flex;
+}
+.contactpage .contact-section .contact-row {
+  width: 100vw;
+}
+.contactpage .contact-section .contact-details .details-title {
+  font-size: calc(24px + 6 * (100vw - 320px) / 1080);
+  color: #255a79;
+}
+.contactpage .contact-section .contact-details .details-location,
+.contactpage .contact-section .contact-details .details-telephone,
+.contactpage .contact-section .contact-details .details-email,
+.contactpage .contact-section .contact-details .details-blog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.contactpage .contact-section .contact-details .details-location svg,
+.contactpage .contact-section .contact-details .details-telephone svg,
+.contactpage .contact-section .contact-details .details-email svg,
+.contactpage .contact-section .contact-details .details-blog svg {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  color: #255a79;
+}
+.contactpage .contact-section .contact-details .details-location svg.location-icon,
+.contactpage .contact-section .contact-details .details-telephone svg.location-icon,
+.contactpage .contact-section .contact-details .details-email svg.location-icon,
+.contactpage .contact-section .contact-details .details-blog svg.location-icon {
+  width: 45px;
+  height: 45px;
+}
+.contactpage .contact-section .contact-details .details-location a,
+.contactpage .contact-section .contact-details .details-telephone a,
+.contactpage .contact-section .contact-details .details-email a,
+.contactpage .contact-section .contact-details .details-blog a {
+  text-decoration: none;
+  color: #464b4c;
+}
+.contactpage .contact-section .contact-details .details-location a:hover,
+.contactpage .contact-section .contact-details .details-telephone a:hover,
+.contactpage .contact-section .contact-details .details-email a:hover,
+.contactpage .contact-section .contact-details .details-blog a:hover {
+  color: #008cff;
+}
+.contactpage .contact-section .contact-details .details-location .location-address,
+.contactpage .contact-section .contact-details .details-telephone .location-address,
+.contactpage .contact-section .contact-details .details-email .location-address,
+.contactpage .contact-section .contact-details .details-blog .location-address {
+  display: flex;
+  flex-direction: column;
+}
+.contactpage .contact-section .contact-details .details-location .location-address .association-title,
+.contactpage .contact-section .contact-details .details-telephone .location-address .association-title,
+.contactpage .contact-section .contact-details .details-email .location-address .association-title,
+.contactpage .contact-section .contact-details .details-blog .location-address .association-title {
+  font-size: calc(17px + 2 * (100vw - 320px) / 1080);
+  color: #464b4c;
 }
 
 /*-------------------------------------

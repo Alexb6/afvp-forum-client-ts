@@ -1,4 +1,4 @@
-const AFPV = {
+const AFPV_Data = {
   title: "Association Franco-Vietnamienne de Pneumologie",
   address: "68 bd St Michel",
   zipCode: 75006,
@@ -8,4 +8,4 @@ const AFPV = {
   email: "contact@afvp.xyz",
 };
 
-export default AFPV;
+export default AFPV_Data;

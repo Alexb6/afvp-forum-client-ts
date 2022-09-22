@@ -1,0 +1,22 @@
+@use "./../abstracts" as *;
+
+.form-textarea {
+  @include input-general-styles;
+
+  .textarea-textarea {
+    @include input-styles;
+    white-space: pre-line;
+
+    &:focus ~ .textarea-label {
+      @include shrink-label;
+    }
+  }
+
+  .textarea-label {
+    @include input-label;
+
+    &.shrink {
+      @include shrink-label;
+    }
+  }
+}

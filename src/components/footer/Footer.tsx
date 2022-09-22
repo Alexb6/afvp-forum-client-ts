@@ -4,7 +4,7 @@ import { ReactComponent as LogoFooter } from "./../../assetsSrc/logo/logo-site-f
 import { ReactComponent as HollowRightChevron } from "./../../assetsSrc/icons/hollow-right-chevron.svg";
 import { ReactComponent as PencilDesigner } from "./../../assetsSrc/icons/pencil-designer.svg";
 import LineDivider from "./../ui-elements/LineDivider";
-import AFVP from "../../config/data-AFVP";
+import AFVP from "../../config/AFVP_Data";
 
 import "./../../css/styles.css";
 
